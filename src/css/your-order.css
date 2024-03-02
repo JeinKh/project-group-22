@@ -159,6 +159,8 @@
 }
 
 .your-order-image {
+    display: block;
+    width: 100%;
 }
 
 .your-order-social-text {
