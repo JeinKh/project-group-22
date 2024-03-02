@@ -13,11 +13,12 @@
 .footer-logo-container {
   display: flex;
   flex-direction: column;
+  max-width: 296px;
+  gap: 14px;
 }
 .footer-logo-img {
 }
 .footer-text {
-  padding-top: 14px;
   padding-bottom: 40px;
   color: #fbfbfb;
   font-family: 'Inter Tight';
@@ -25,9 +26,7 @@
   font-weight: 500;
   line-height: 1.28;
 }
-.footer-text-container {
-  max-width: 296px;
-}
+
 .footer-nav {
   display: flex;
   flex-direction: column;
@@ -90,4 +89,57 @@
   line-height: 1.16;
   letter-spacing: -0.015em;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding: 32px 32px;
+  }
+  .footer-logo-container {
+    max-width: 265px;
+    gap: 25px;
+  }
+  .footer-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .footer-nav-container {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    margin-bottom: 100px;
+  }
+  .footer-nav-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav {
+    gap: 25px;
+  }
+  .footer-nav-item {
+    font-size: 32px;
+  }
+
+  .footer-address {
+    gap: 25px;
+  }
+  .footer-address-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-address-item {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+  .footer-bottom-link {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+  .footer-bottom-text {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+  .copyright {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 }
