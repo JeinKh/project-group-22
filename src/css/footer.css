@@ -1,3 +1,31 @@
-.footer{
-    background-color: #cbd815;
+.footer {
+  background-color: #7a3145;
+}
+.footer-container {
+  padding: 40px 20px;
+}
+.footer-logo {
+}
+.footer-logo-img {
+}
+.footer-text {
+  padding-top: 14px;
+  padding-bottom: 40px;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 40px;
+}
+.footer-nav-item {
+}
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer-address-item {
+}
+.footer-address-link {
 }
