@@ -1,4 +1,14 @@
 /* Reset styles */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter Tight', sans-serif;
+}
+
 h1,
 h2,
 h3,
