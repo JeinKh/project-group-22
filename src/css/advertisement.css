@@ -1,9 +1,10 @@
 .advertisement {
             padding: 80px 0;
         }
+
 .advertisement-container {
-    max-width: 375px;
-    padding: 0 10px;
+    width: 375px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .advertisement-hidden {
@@ -20,13 +21,13 @@
 }
 
 .advertisement-text {
+    font-family: Inter Tight;
     font-weight: 600;
     font-size: 48px;
     line-height: 1.04;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #141414;
-    padding: 0 10px;
 }
 
 .advertisement-span {
@@ -35,7 +36,7 @@
     border-radius: 12px;
     margin-left: -10px;
     margin-right: -10px;
-    padding: 0 10px;
+    padding: 3px 10px;
     color: #fbfbfb;
 }
 
@@ -44,35 +45,31 @@
         padding: 100px 0;
     }
 .advertisement-container {
-    max-width: 768px;
-    padding: 0 16px;
+    width: 768px;
+    padding: 0 32px;
 }
 .advertisement-text {
     font-size: 64px;
     line-height: 1.09;
-    padding: 0 16px;
 }
 .advertisement-span {
     margin-left: -16px;
     margin-right: -16px;
-    padding: 0 16px;
+    padding: 8px 16px;
 }
 }
 
 @media screen and (min-width: 1280px) {
-    .advertisement {
-            padding: 100px 0;
-        }
 .advertisement-container {
-    max-width: 1280px;
-    padding: 0 100px;
+    width: 1280px;
+    padding: 0 113px;
 }
 .advertisement-text {
     font-size: 76px;
     line-height: 1.05;
-    padding: 0 13px;
 }
 .advertisement-span {
+    display: inline-block;
     margin-left: -13px;
     margin-right: -13px;
     padding: 0 13px;
