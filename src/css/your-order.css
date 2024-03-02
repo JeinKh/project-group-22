@@ -1,3 +1,184 @@
-.your-order{
-background-color: #7A3145;
+
+/* ---- Your order ----- */
+
+.your-order {
+    background-color: #7A3145;
+    padding: 80px 0;
+}
+.your-order-title {
+    color: #FBFBFB;
+    margin-bottom: 29px;
+}
+
+.your-order-title > span {
+    color: rgba(251, 251, 251, 0.3);
+}
+.your-order-description {
+    margin-bottom: 40px;
+
+    color: #FBFBFB;
+}
+.your-order-wrapper {
+}
+.your-order-form-column {
+    margin-bottom: 20px;
+    padding: 40px 20px;
+    border-radius: 30px;
+
+    background-color: #FBFBFB;
+}
+.your-order-form-description {
+    margin-bottom: 40px;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 108%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+
+    color: #141414;
+}
+
+.your-order-form-description > span:nth-child(1) {
+    color: #7a3145;
+}
+
+.your-order-form-description > span:nth-child(2) {
+    color: #576F35;
+}
+.your-order-form {
+}
+.your-order-name,
+.your-order-email {
+    width: 100%;
+    margin-bottom: 15px;
+
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    border-radius: 30px;
+    padding: 14px 16px;
+    outline: none;
+
+    transition: border-color 250ms ease-in-out;
+}
+
+  /* стилізація інпута при невалідному значенні */
+.your-order-name:not(:placeholder-shown):invalid,
+.your-order-email:not(:placeholder-shown):invalid {
+    border-color: #E74A3B;
+  }
+  
+  /* стилізація інпута при валідному значенні */
+.your-order-name:not(:placeholder-shown):valid,
+.your-order-email:not(:placeholder-shown):valid {
+    border-color: #3CBC81;
+  }
+
+.your-order-name:hover,
+.your-order-email:hover,
+.your-order-comment:hover {
+    border-color: #7A3145;
+}
+
+.your-order-name::placeholder,
+.your-order-email::placeholder,
+.your-order-comment::placeholder
+ {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #141414;
+
+    opacity: 1;
+
+    transition: opacity 250ms ease-in-out;
+}
+
+.your-order-name:focus-within::placeholder,
+.your-order-email:focus-within::placeholder,
+.your-order-comment:focus-within::placeholder {
+    opacity: 0.2;
+}
+
+.your-order-comment {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 14px 16px;
+
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    outline: none;
+
+    transition: border-color 250ms ease-in-out;
+}
+.your-order-button {
+    width: 100%;
+    padding: 16px;
+
+    background-color: #576F35;
+    border-color: #FBFBFB;
+    border-width: 1px;
+    border-radius: 30px;
+
+    color: #FBFBFB;
+
+    transition: background-color 250ms ease-in-out,
+                color 250ms ease-in-out;
+}
+
+.your-order-button:hover {
+    background-color: #FBFBFB;
+    border-color: #576F35;
+
+    color:#141414;
+}
+.your-order-social-column {
+    padding: 40px 20px;
+    border-radius: 30px;
+
+    background-color: #576F35;
+}
+
+.your-order-image-wrapper {
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    z-index: 1;
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.your-order-image-wrapper::after {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 10;
+    inset: 0;
+    background-color: rgba(20, 20, 20, 0.3)
+}
+
+.your-order-image {
+}
+
+.your-order-social-text {
+    margin-bottom: 14px;
+    
+    line-height: 129%;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+}
+.your-order-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.your-order-social-item {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 108%;
+
+    color: #FBFBFB;
+}
+.your-order-social-link {
 }
