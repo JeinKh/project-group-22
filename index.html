@@ -13,7 +13,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/project-group-22/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-group-22/assets/index-0ee69b89.css">
+    <link rel="stylesheet" href="/project-group-22/assets/index-bde9ccd5.css">
   </head>
   <body>
     <header class="header">
@@ -132,7 +132,68 @@
     </div>
 </section>
       <section class="your-order">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, eveniet!</p>
+    <div class="container">
+        <h2 class="your-order-title">
+            Fresh <span>Harvest</span> Box has got you covered
+        </h2>
+        <p class="your-order-description">
+            Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or
+            support local farmers. Order your box today and start enjoying the best that nature has to offer!
+        </p>
+        <div class="your-order-wrapper">
+            <div class="your-order-form-column">
+                <p class="your-order-form-description">
+                    Ordering <span>from us</span> is quick and easy! Fill out <span>the form</span> below and we will contact you!
+                </p>
+                <form action="" class="your-order-form">
+                    <input class="your-order-name" type="text" name="full-name" id="full-name" placeholder="Full Name"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+                    <input class="your-order-email" type="email" name="email" id="email" placeholder="Email">
+                    <textarea class="your-order-comment" name="textarea" id="textarea" cols="10" rows="4"
+                        placeholder="Comment"></textarea>
+                    <button class="your-order-button" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="your-order-social-column">
+                <!-- <figure class="your-order-image-wrapper">
+                    <img class="your-order-image" 
+                    srcset="/img/your-order/juice-squeezing-mob.jpg 1x, 
+                          /img/your-order/juice-squeezing-mob-2x.jpg 2x"
+                    src="/img/your-order/juice-squeezing-mob.jpg" width="295" height="273" alt="Manual squeezing of juice into a bottle">
+                </figure> -->
+                <picture class="your-order-image-wrapper">
+                    <source class="your-order-image"
+                      media="(min-width: 1279px)" 
+                      srcset="/project-group-22/assets/juice-squeezing-desktop-dec1cc04.jpg 1x, /project-group-22/assets/juice-squeezing-desktop-2x-552f37ae.jpg 2x">
+                    <source class="your-order-image"
+                      media="(min-width: 768px)" 
+                      srcset="/project-group-22/assets/juice-squeezing-tablet-87e8ba02.jpg 1x, /project-group-22/assets/juice-squeezing-tablet-2x-c874ea02.jpg 2x">
+                    <source class="your-order-image"
+                      media="(max-width: 767px)" 
+                      srcset="/project-group-22/assets/juice-squeezing-mob-eb5d5cda.jpg 1x, /project-group-22/assets/juice-squeezing-mob-2x-dd1249b0.jpg 2x">
+                    <img class="your-order-image" 
+                      src="/project-group-22/assets/juice-squeezing-mob-eb5d5cda.jpg" 
+                      alt="Manual squeezing of juice into a bottle" width="360">
+                  </picture>
+                <p class="your-order-social-text">
+                    Follow us on our social networks:
+                </p>
+                <ul class="your-order-social-list">
+                    <li class="your-order-social-item">
+                        <a href="https://www.instagram.com/goitclub/" class="your-order-social-link">instagram</a>
+                    </li>
+                    <li class="your-order-social-item">/</li>
+                    <li class="your-order-social-item">
+                        <a href="https://www.facebook.com/goITclub/" class="your-order-social-link">facebook</a>
+                    </li>
+                    <li class="your-order-social-item">/</li>
+                    <li class="your-order-social-item">
+                        <a href="https://www.youtube.com/c/GoIT" class="your-order-social-link">youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
     </main>
     <footer class="footer">
