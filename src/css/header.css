@@ -1,3 +1,347 @@
-.header {
-  background-color: aqua;
+/*main stylse*/
+ul { /*Remove when we resolve the global styles issue*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a { /*Remove when we resolve the global styles issue*/
+  text-decoration: none;
+  padding: 0;
+}
+
+button { /*Remove when we resolve the global styles issue*/
+  padding: 0;
+  margin: 0;
+  font-family: "Inter Tight", sans-serif; /*Remove when we resolve the global styles issue*/
+}
+
+header {
+  font-family: "Inter Tight", sans-serif; /*Remove when we resolve the global styles issue*/
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.header-logo-label {
+  fill: #FBFBFB;
+  width: 16px; 
+  height: 16px;
+}
+
+.header-logo-text {
+  fill: #FBFBFB;
+  width: 146px;
+  height: 12px;
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-mob-menu-open {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mob-menu-open {
+  fill: #FBFBFB;
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.backdrop-mob-menu {
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  /*transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(20, 20, 20, 0.4);
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.is-close {
+  animation-duration: 1s;
+  animation-name: slideout;
+}
+
+@keyframes slideout {
+  from {
+    margin-left: 0%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    margin-left: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+.modal-menu-conteiner {
+  height: 100%;
+  max-width: 375px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 240px 130px 40px 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #7A3145;
+}
+
+.modal-close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  fill: #FBFBFB;
+}
+
+.modal-close-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.header-mob-menu {
+  font-style: normal;
+  margin-bottom: auto;
+}
+
+.header-mob-menu-item {
+  margin: 0 auto;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+  padding: 12px 16px;
+  background-color: transparent;
+  text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mob-menu-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.header-mob-menu-item:hover, .header-mob-menu-item:focus, .header-mob-menu-item:active {
+  background-color: #FBFBFB;
+  cursor: pointer;
+}
+
+.header-mob-menu-item a {
+  color: #FBFBFB;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 18px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mob-menu-item:hover > .header-mob-menu-link, 
+.header-mob-menu-item:focus > .header-mob-menu-link,
+.header-mob-menu-item:active > .header-mob-menu-link {
+  color: #7A3145;
+}
+
+.header-mob-menu-button {
+  border-radius: 30px;
+  border: none;
+  background-color: #FBFBFB;
+  color: rgba(122, 49, 69, 0.7);
+  padding: 16px 41px;
+  min-width: 155px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mob-menu-button:hover {
+  color: #7A3145;
+  cursor: pointer;
+} 
+.header-mob-menu-button:active, .header-mob-menu-button:focus {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  background-color: transparent;
+  color: #FBFBFB;
+}
+
+/*adaptiv styles*/
+
+@media screen and (min-width:768px) {
+
+  .header {
+    top: 32px;
+  }
+
+  .container {
+      min-width: 0;
+      max-width: none;
+      width: 768px;
+      padding: 0 32px 0 32px;
+  }
+
+  .header-logo-label {
+      width: 18px; 
+      height: 18px;
+  }
+
+  .header-logo-text {
+      width: 168px;
+      height: 15px;
+  }
+
+  .header-mob-menu-open, .mob-menu-open {
+      width: 40px;
+      height: 40px;
+  }
+
+  .modal-menu-conteiner {
+      max-width: 351px;
+      padding: 360px 97px 50px 97px;
+  }
+
+  .modal-close, .modal-close-icon {
+      width: 40px;
+      height: 40px;
+  }
+
+  .header-mob-menu-item {
+      padding: 12px 12px;
+  }
+
+  .header-mob-menu-item a {
+      font-size: 15px;
+      line-height: 20px;
+  }
+
+  .header-mob-menu-button {
+      padding: 16px 32px;
+      min-width: 157px;
+      font-size: 17px;
+      line-height: 20px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  
+  .container {
+      width: 1280px;
+      padding: 0 100px 0 100px;
+  }
+
+  .header-menu {
+      display: flex;
+      gap: 20px;
+  }
+
+  .heder-menu-list {
+      display: flex;
+      gap: 8px;
+  }
+
+  .header-menu-item {
+      border: 1px solid rgba(251, 251, 251, 0.4);
+      border-radius: 12px;
+      padding: 12px;
+  }
+
+  .header-menu-link {
+      color: aliceblue;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+  }
+
+  .header-menu-button {
+      border-radius: 30px;
+      border: none;
+      padding: 16px 32px;
+      background-color: #622133;
+      color: #FBFBFB;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu-button:hover {
+      background-color: #7A3145;
+      cursor: pointer;
+  }
+
+  .backdrop-mob-menu {
+      display: none;
+  }
+
+  .header-mob-menu-open {
+      display: none;
+  }
 }
