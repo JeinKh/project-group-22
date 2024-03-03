@@ -1,3 +1,120 @@
 .vegetables {
   background-color: #157a3e;
 }
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.vegetables {
+  background: #7a3145;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.vegetables-container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.vegetables-title {
+  color: #fbfbfb;
+  text-align: left;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.vegetables-title-dark {
+  color: rgba(251, 251, 251, 0.3);
+}
+.vegetables-subtitle {
+  color: #fbfbfb;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: 0em;
+  margin-bottom: 40px;
+}
+.vegetables-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.vegetables-list-item {
+  width: 100%;
+  height: 379px;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  padding: 32px 26px;
+}
+.vegetables-list-subtitle {
+  color: #7a3145;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.vegetables-list-text {
+  color: #141414;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: 0em;
+  margin-bottom: 14px;
+}
+.vegetables-list-img {
+  margin: 0 auto;
+  width: 282px;
+  height: 243px;
+}
+@media screen and (min-width: 768px) {
+  .vegetables {
+    padding: 100px 32px;
+  }
+  .vegetables-container {
+    width: 768px;
+  }
+  .vegetables-title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+  .vegetables-title-dark {
+    display: flex;
+  }
+  .vegetables-subtitle {
+    width: 626px;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 50px;
+  }
+  .vegetables-list {
+    row-gap: 28px;
+    column-gap: 20px;
+  }
+  .vegetables-list-item {
+    max-width: 342px;
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .vegetables {
+    padding: 100px;
+  }
+  .vegetables-container {
+    width: 1280px;
+  }
+  .vegetables-list {
+    column-gap: 21px;
+  }
+  .vegetables-list-item {
+    width: calc((100% - 42px) / 3);
+  }
+}
