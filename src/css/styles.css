@@ -43,6 +43,16 @@ body{
   font-family: 'Inter Tight', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section{
   padding: 80px 0px;
 }
