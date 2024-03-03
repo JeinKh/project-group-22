@@ -16,12 +16,12 @@
     }
 }
 
-.container {
+/* .container {
     margin: 0 auto;
     padding: 0 20px;
     min-width: 320px;
     max-width: 375px;
-}
+} */
 
 .hero-title {
     font-weight: 600;
@@ -60,10 +60,10 @@
         }
     }
 
-    .container {
+    /* .container {
         padding: 0 32px;
         min-width: 768px;
-    }
+    } */
 
     .hero-title {
         font-weight: 600;
@@ -106,10 +106,10 @@
         }        
     }
 
-    .container {
+    /* .container {
         padding: 0 100px;
         min-width: 1280px;
-    }
+    } */
 
     .hero-title {
         padding-top: 238px;

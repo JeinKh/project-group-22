@@ -1,23 +1,4 @@
-/*main stylse*/
-ul { /*Remove when we resolve the global styles issue*/
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a { /*Remove when we resolve the global styles issue*/
-  text-decoration: none;
-  padding: 0;
-}
-
-button { /*Remove when we resolve the global styles issue*/
-  padding: 0;
-  margin: 0;
-  font-family: "Inter Tight", sans-serif; /*Remove when we resolve the global styles issue*/
-}
-
 header {
-  font-family: "Inter Tight", sans-serif; /*Remove when we resolve the global styles issue*/
   background-color: transparent;
   position: absolute;
   top: 20px;
@@ -25,12 +6,12 @@ header {
   transform: translatex(-50%);
 }
 
-.container {
+/* .container {
   min-width: 320px;
   max-width: 375px;
   padding: 0 20px 0 20px;
   margin: 0 auto;
-}
+} */
 
 .header-container {
   display: flex;
@@ -238,12 +219,12 @@ header {
     top: 32px;
   }
 
-  .container {
+  /* .container {
       min-width: 0;
       max-width: none;
       width: 768px;
       padding: 0 32px 0 32px;
-  }
+  } */
 
   .header-logo-label {
       width: 18px; 
@@ -289,10 +270,10 @@ header {
 
 @media screen and (min-width:1280px) {
   
-  .container {
+  /* .container {
       width: 1280px;
       padding: 0 100px 0 100px;
-  }
+  } */
 
   .header-menu {
       display: flex;
