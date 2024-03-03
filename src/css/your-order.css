@@ -3,11 +3,9 @@
 
 .your-order {
     background-color: #7A3145;
-    padding: 80px 0;
 }
 .your-order-title {
     margin-bottom: 29px;
-
     font-weight: 600;
     font-size: 48px;
     line-height: 104%;
@@ -25,8 +23,7 @@
     font-weight: 500;
     color: #FBFBFB;
 }
-.your-order-wrapper {
-}
+
 .your-order-form-column {
     margin-bottom: 20px;
     padding: 40px 20px;
@@ -53,8 +50,7 @@
 .your-order-form-description > span:nth-child(2) {
     color: #576F35;
 }
-.your-order-form {
-}
+
 .your-order-name,
 .your-order-email {
     width: 100%;
@@ -72,13 +68,13 @@
 .your-order-name:not(:placeholder-shown):invalid,
 .your-order-email:not(:placeholder-shown):invalid {
     border-color: #E74A3B;
-  }
-  
+}
+
   /* стилізація інпута при валідному значенні */
 .your-order-name:not(:placeholder-shown):valid,
 .your-order-email:not(:placeholder-shown):valid {
     border-color: #3CBC81;
-  }
+}
 
 .your-order-name:hover,
 .your-order-email:hover,
@@ -89,7 +85,7 @@
 .your-order-name::placeholder,
 .your-order-email::placeholder,
 .your-order-comment::placeholder
- {  
+{  
     font-family: 'Inter Tight';
     font-weight: 500;
     font-size: 14px;
@@ -195,8 +191,7 @@
 .your-order-social-item:hover {
     color: #7a3145;
 }
-.your-order-social-link {
-}
+
 
 @media screen and (min-width:768px){
     .your-order {
