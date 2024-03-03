@@ -17,8 +17,60 @@
   </head>
   <body>
     <header class="header">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sequi!</p>
+  <div class="container header-container">
+    <a class="header-logo" href="./index.html">
+        <svg class="header-logo-label" >
+            <use href="../img/icons.svg#icon-logo-label"></use>
+        </svg>
+        <svg class="header-logo-text" >
+            <use href="../img/icons.svg#icon-logo-text"></use>
+        </svg>
+    </a>
+    <nav class="header-menu">
+        <ul class="heder-menu-list">
+            <li class="header-menu-item">
+                <a class="header-menu-link" href="#how-it-works" onclick="close()">How It Works</a>
+            </li>
+            <li class="header-menu-item">
+                <a class="header-menu-link" href="#vegetables">Vegetables</a>
+            </li>
+            <li class="header-menu-item">
+                <a class="header-menu-link" href="#review">Reviews</a>
+            </li>
+        </ul>
+        <button type="button" class="header-menu-button">shop now</button>
+    </nav>
+    <button type="button" class="header-mob-menu-open" id="open">
+            <svg class="mob-menu-open">
+                <use href="../img/icons.svg#icon-mob-menu-open"></use>
+            </svg>
+    </button>
+</div>
 </header>
+<div class="backdrop-mob-menu" id="modal-menu">
+    <div class="modal-menu-conteiner">
+        <button type="button" class="modal-close" id="close">
+            <svg class="modal-close-icon">
+                <use href="../img/icons.svg#icon-mob-menu-close"></use>
+            </svg>
+        </button>
+        <nav class="header-mob-menu">
+            <ul class="heder-mob-menu-list">
+                <li class="header-mob-menu-item">
+                    <a class="header-mob-menu-link" href="#how-it-works" id="mob-link">How It Works</a>
+                </li>
+                <li class="header-mob-menu-item">
+                    <a class="header-mob-menu-link" href="#vegetables" id="mob-link2">Vegetables</a>
+                </li>
+                <li class="header-mob-menu-item">
+                    <a class="header-mob-menu-link" href="#review" id="mob-link3">Reviews</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" class="header-mob-menu-button">shop now</button>
+    </div>
+</div>
+<script src="../js/header/sqript.js"></script>
 
     <main>
       <section class="hero">
