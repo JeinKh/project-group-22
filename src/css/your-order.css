@@ -1,3 +1,46 @@
+/* ------------- Temporary ----------- */
+
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter Tight', sans-serif;
+  margin: 0;
+}
+
+.container{
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:768px){ 
+  .container{
+    min-width: 0px;
+    max-width: none;
+    padding: 0 32px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width:1280px){ 
+  .container{
+    padding: 0 100px;
+    width: 1280px;
+  }
+}
 
 /* ---- Your order ----- */
 
@@ -6,8 +49,14 @@
     padding: 80px 0;
 }
 .your-order-title {
-    color: #FBFBFB;
     margin-bottom: 29px;
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 104%;
+    letter-spacing: -0.01em; 
+    text-transform: uppercase;
+    color: #FBFBFB;
 }
 
 .your-order-title > span {
@@ -82,7 +131,8 @@
 .your-order-name::placeholder,
 .your-order-email::placeholder,
 .your-order-comment::placeholder
- {
+ {  
+    font-family: 'Inter Tight';
     font-weight: 500;
     font-size: 14px;
     line-height: 129%;
@@ -120,6 +170,11 @@
     border-width: 1px;
     border-radius: 30px;
 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
     color: #FBFBFB;
 
     transition: background-color 250ms ease-in-out,
@@ -141,21 +196,13 @@
 
 .your-order-image-wrapper {
     position: relative;
+    display: block;
     margin: 0;
     margin-bottom: 20px;
     z-index: 1;
 
     border-radius: 15px;
     overflow: hidden;
-}
-
-.your-order-image-wrapper::after {
-    content: '';
-    position: absolute;
-    display: block;
-    z-index: 10;
-    inset: 0;
-    background-color: rgba(20, 20, 20, 0.3)
 }
 
 .your-order-image {
@@ -166,6 +213,7 @@
 .your-order-social-text {
     margin-bottom: 14px;
     
+    font-weight: 600;
     line-height: 129%;
     letter-spacing: -0.01em;
     color: rgba(251, 251, 251, 0.5);
@@ -179,8 +227,74 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 108%;
+    letter-spacing: -0.01em;
 
     color: #FBFBFB;
+
+    transition: color 250ms ease-in-out;
+}
+.your-order-social-item:hover {
+    color: #7a3145;
 }
 .your-order-social-link {
+}
+
+@media screen and (min-width:768px){
+    .your-order {
+        padding: 100px 0;
+    }
+    .your-order-title {
+        margin-bottom: 25px;
+        font-size: 64px;
+        line-height: 100%;
+    }
+    .your-order-description {
+        margin-bottom: 50px;
+        max-width: 640px;
+    }
+    .your-order-form-column {
+        padding: 50px 100px;
+        max-width: 628px;
+        margin: 0 auto 25px auto;
+    }
+    .your-order-form-description {
+        margin-bottom: 50px;
+    }
+    .your-order-name::placeholder,
+    .your-order-email::placeholder,
+    .your-order-comment::placeholder {
+        font-size: 16px;
+        line-height: 125%;
+    }
+    .your-order-name,
+    .your-order-email,
+    .your-order-comment {
+        padding: 16px;
+    }
+    .your-order-button {
+        font-size: 18px;
+        line-height: 111%;
+    }
+    .your-order-social-column {
+        max-width: 628px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+    .your-order-image-wrapper {
+        margin-bottom: 50px;
+    }
+    .your-order-social-text {
+        margin-bottom: 15px;
+
+        font-size: 18px;
+        line-height: 111%;
+    }
+    .your-order-social-item {
+        font-size: 32px;
+        line-height: 100%;
+    }
+}
+
+@media screen and (min-width:1280px){
+
 }
