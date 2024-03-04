@@ -211,6 +211,7 @@ header {
       top: 32px;
       left: 50%;
       transform: translatex(-50%);
+      padding-top: 0px;
   }
 
   /* .container {
