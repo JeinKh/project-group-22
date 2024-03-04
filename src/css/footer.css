@@ -16,8 +16,7 @@
   max-width: 296px;
   gap: 14px;
 }
-.footer-logo-img {
-}
+
 .footer-text {
   padding-bottom: 40px;
   color: #fbfbfb;
@@ -46,8 +45,7 @@
   flex-direction: column;
   gap: 14px;
 }
-.footer-address-list {
-}
+
 .footer-address-item {
   color: #fbfbfb;
   font-family: 'Inter Tight';
@@ -59,8 +57,7 @@
 .footer-address-item:last-child {
   margin-bottom: 80px;
 }
-.footer-address-link {
-}
+
 .footer-bottom {
   display: flex;
   gap: 8px;
