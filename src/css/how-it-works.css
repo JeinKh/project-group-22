@@ -65,6 +65,7 @@
         background-image: url(../img/how-it-works/icons.svg);
         clip-path: circle(26px);
         margin-right: 24px;
+        flex-shrink: 0;
 }
 .hiw-item{
         display: flex;
