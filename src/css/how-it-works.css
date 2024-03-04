@@ -136,11 +136,11 @@
     }
     .hiw-bg-container{
         padding: 100px;
-        min-width: 49.21%;
+        min-width: 50%;
     }
     .hiw-list-container{
         padding: 100px;
-        min-width: 50.78%;  
+        min-width: 50%;  
     }
     
 }
