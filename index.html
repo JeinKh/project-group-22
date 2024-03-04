@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="/project-group-22/lettuce_vegetable.svg"/>
     
     <script type="module" crossorigin src="/project-group-22/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-group-22/assets/index-bb1450a5.css">
+    <link rel="stylesheet" href="/project-group-22/assets/index-069b6e64.css">
   </head>
   <body>
     <header class="header">
@@ -36,9 +36,9 @@
                 <a class="header-menu-link" href="#review">Reviews</a>
             </li>
         </ul>
-        <button type="button" class="header-menu-button" onclick="window.location = '#your-order'" >shop now</button>
+        <button type="button" class="header-menu-button" onclick="window.location = '#your-order'" aria-label="Shop now">shop now</button>
     </nav>
-    <button type="button" class="header-mob-menu-open">
+    <button type="button" class="header-mob-menu-open" aria-label="Open menu">
             <svg class="mob-menu-open">
                 <use href="/project-group-22/assets/icons-3b985185.svg#icon-mob-menu-open"></use>
             </svg>
@@ -47,7 +47,7 @@
 </header>
 <div class="backdrop-mob-menu" id="modal-menu">
     <div class="modal-menu-conteiner">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" aria-label="Close menu">
             <svg class="modal-close-icon" width="20" height="20">
                 <use href="/project-group-22/assets/icons-3b985185.svg#icon-mob-menu-close"></use>
             </svg>
@@ -65,7 +65,7 @@
                 </li>
             </ul>
         </nav>
-        <button type="button" class="header-mob-menu-button" onclick="window.location = '#your-order'" >shop now</button>
+        <button type="button" class="header-mob-menu-button" onclick="window.location = '#your-order'" aria-label="Shop now">shop now</button>
     </div>
 </div>
 
@@ -264,12 +264,12 @@
                 <p class="your-order-form-description">
                     Ordering <span>from us</span> is quick and easy! Fill out <span>the form</span> below and we will contact you!
                 </p>
-                <form action="" class="your-order-form">
+                <form action="javascript:void(0)" class="your-order-form">
                     <input class="your-order-name" type="text" name="full-name" id="full-name" placeholder="Full Name"/>
                     <input class="your-order-email" required type="email" name="email" id="email" placeholder="Email" pattern="([A-z0-9.-]{1,})@([A-z0-9.-]{1,}).([A-z]{2,8})"/>
                     <textarea class="your-order-comment" name="textarea" id="textarea" cols="10" rows="4"
                         placeholder="Comment"></textarea>
-                    <button class="your-order-button" type="submit">Send</button>
+                    <button class="your-order-button" type="submit" aria-label="Send">Send</button>
                 </form>
             </div>
             <div class="your-order-social-column">
