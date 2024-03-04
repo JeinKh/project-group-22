@@ -44,7 +44,7 @@
 .vegetables-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 40px;
+  row-gap: 20px;
 }
 .vegetables-list-item {
   width: 100%;
