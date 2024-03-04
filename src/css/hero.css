@@ -102,7 +102,7 @@
 
     .img-wrapper {
         background-image: url(../img/hero-section/hero-image-pc@1x.jpg);
-        width: 650px;
+        max-width: 50%;
         height: 800px;
     }
     
