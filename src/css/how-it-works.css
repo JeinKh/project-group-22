@@ -110,7 +110,7 @@
     }
     .hiw-item{
         padding: 12px 25px 12px 24px;
-        width: 450px;
+        max-width: 450px;
         height: 76px;
     }
     .hiw-item-text{
