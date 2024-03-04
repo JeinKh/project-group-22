@@ -71,7 +71,7 @@
 .hiw-item{
         display: flex;
         border-radius: 15px;
-        width: 335px;
+        max-width: 335px;
         height: 76px;
         background-color: #FBFBFB;
         border-radius: 15px;
@@ -92,7 +92,7 @@
 }
 @media screen and (min-width:768px) {
     .hiw-img-container{
-        width: 640px;
+        max-width: 640px;
     }
     .hiw-bg-container{
         padding: 100px 64px;
@@ -122,7 +122,7 @@
         flex-direction: row;
     }
     .hiw-img-container{
-        width: 430px;
+        max-width: 430px;
     }
     .hiw-bg-container{
         padding: 100px;
