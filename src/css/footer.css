@@ -1,5 +1,6 @@
 .footer {
   background-color: #7a3145;
+  padding: 32px 0;
 }
 .footer-container {
   padding: 40px 20px;
@@ -39,6 +40,12 @@
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.015em;
+
+  transition: color 250ms ease-in-out;
+}
+.footer-nav-item:hover,
+.footer-address-item:hover {
+  color: rgba(251, 251, 251, 0.5);
 }
 .footer-address {
   display: flex;
@@ -53,6 +60,8 @@
   font-weight: 600;
   line-height: 1.28;
   letter-spacing: -0.015em;
+
+  transition: color 250ms ease-in-out;
 }
 .footer-address-item:last-child {
   margin-bottom: 80px;
@@ -69,6 +78,11 @@
   font-weight: 500;
   line-height: 1.33;
   letter-spacing: -0.015em;
+
+  transition: color 250ms ease-in-out;
+}
+.footer-bottom-link:hover {
+  color: rgba(251, 251, 251, 1);
 }
 .footer-bottom-text {
   color: rgba(251, 251, 251, 0.5);
