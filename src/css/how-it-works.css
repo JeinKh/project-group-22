@@ -10,20 +10,24 @@
     display: flex;
         justify-content: center;
 }
+
 .hiw-img{
     max-width: 100%;
     border-radius: 30px;
 }
+
 .hiw-img-container{
     max-width: 335px;
 }
+
 .hiw-list-container{
     background-color: #576F35;
     padding: 80px 20px;
     display: flex;
-        flex-direction: column;
-        align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 .hiw-list-title {
     font-weight: 600;
     font-size: 28px;
@@ -45,6 +49,7 @@
     color: #FBFBFB;
 }
 .hiw-list{
+    width: 100%;
     counter-reset: section;
     padding: 0px;
     margin-top: 40px;

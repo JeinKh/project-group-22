@@ -107,7 +107,7 @@ header {
 
 .modal-menu-conteiner {
   height: 100%;
-  max-width: 375px;
+  max-width: 100%;
   position: absolute;
   top: 0;
   right: 0;
