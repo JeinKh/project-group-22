@@ -178,7 +178,8 @@
     flex-wrap: wrap;
     gap: 8px;
 }
-.your-order-social-item {
+.your-order-social-item,
+.your-order-social-divider {
     font-size: 24px;
     font-weight: 600;
     line-height: 108%;
@@ -243,7 +244,8 @@
         font-size: 18px;
         line-height: 111%;
     }
-    .your-order-social-item {
+    .your-order-social-item,
+    .your-order-social-divider {
         font-size: 32px;
         line-height: 100%;
     }
