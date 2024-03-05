@@ -31,7 +31,7 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #FBFBFB;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .list-span {
@@ -101,7 +101,6 @@
     }
     .hiw-bg-container{
         padding: 100px 64px;
-       
     }
     .hiw-list-container{
         padding: 100px 159px;
@@ -109,6 +108,7 @@
     .hiw-list-title{
         width: 450px;
         font-size: 32px;
+        margin-bottom: 25px;
     }
     .hiw-list-text{
         width: 450px;
